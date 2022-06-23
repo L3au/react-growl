@@ -1,7 +1,20 @@
-import { ExampleComponent } from '.'
+import React from 'react'
+import { Growl, useGrowl } from '.'
 
-describe('ExampleComponent', () => {
-  it('is truthy', () => {
-    expect(ExampleComponent).toBeTruthy()
+import { render } from '@testing-library/react'
+
+describe('Growl', () => {
+  it('should render growl component', () => {
+    const { asFragment } = render(
+      <Growl message='Hello' onDismissed={() => {}} />
+    )
+
+    expect(asFragment).toMatchSnapshot()
+  })
+})
+
+describe('useGrowl', () => {
+  it('should return hook', () => {
+    expect(useGrowl()).toBeTruthy()
   })
 })

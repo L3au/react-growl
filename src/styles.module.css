@@ -1,9 +1,37 @@
-/* add css module styles here (optional) */
+.growl {
+  background-color: #000;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: #ffffff;
+  padding: 20px 60px 20px 20px;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  transform: translateY(100px);
+  transition: transform 0.2s ease;
+  user-select: none;
+}
 
-.test {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+.active {
+  transform: translateY(0);
+}
+
+.growlClose {
+  background-image: url('./close-white.svg');
+  background-position: 14px;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+.growlClose:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
