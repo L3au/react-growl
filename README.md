@@ -15,13 +15,18 @@ npm install --save react-growl
 ```tsx
 import React, { Component } from 'react'
 
-import MyComponent from 'react-growl'
-import 'react-growl/dist/index.css'
+import { Growl, useGrowl } from 'react-growl'
 
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  const [active, setActive] = useGrowl(5000)
+
+  return (
+    <Growl
+      onDismissed={() => setActive(false)}
+      active={active}
+      message='Hello World!'
+    />
+  )
 }
 ```
 
