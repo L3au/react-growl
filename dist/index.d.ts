@@ -1,5 +1,2 @@
-interface Props {
-    text: string;
-}
-export declare const ExampleComponent: ({ text }: Props) => JSX.Element;
-export {};
+export { Growl } from './Growl';
+export { useGrowl } from './useGrowl';

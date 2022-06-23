@@ -1,9 +1,39 @@
-/* add css module styles here (optional) */
+._2Nm_9 {
+  background-color: #000;
+  border-radius: 6px;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  color: #ffffff;
+  padding: 20px 60px 20px 20px;
+  bottom: 20px;
+  right: 20px;
+  position: fixed;
+  transform: translateY(100px);
+  transition: transform 0.2s ease;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+          user-select: none;
+}
 
-._3ybTi {
-  margin: 2em;
-  padding: 0.5em;
-  border: 2px solid #000;
-  font-size: 2em;
-  text-align: center;
+._3sodH {
+  transform: translateY(0);
+}
+
+._3JGMO {
+  background-image: url('./close-white.svg');
+  background-position: 14px;
+  background-repeat: no-repeat;
+  background-size: 14px;
+  border-radius: 50%;
+  cursor: pointer;
+  height: 40px;
+  margin-top: -20px;
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transition: all 0.2s ease;
+  width: 40px;
+}
+
+._3JGMO:hover {
+  background-color: rgba(255, 255, 255, 0.2);
 }
