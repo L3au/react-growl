@@ -30,6 +30,8 @@ const App = () => {
 }
 ```
 
+[Demo](https://l3au.github.io/react-growl/)
+
 ## License
 
 MIT © [https://github.com/L3au](https://github.com/https://github.com/L3au)
