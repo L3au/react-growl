@@ -1,6 +1,7 @@
 import React from 'react'
 
 import { Growl, useGrowl } from '../../'
+import 'react-growl/dist/index.css'
 
 const App = () => {
   const [active, setActive] = useGrowl(5000)
